@@ -1,12 +1,40 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Comsci My Friend
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  Hello comsci031
+    <ion-card>
+        <ion-card-content style="text-align:center;padding:0px" >
 
+              <ion-img width="400" height="300px" src="https://raw.githubusercontent.com/604234031cs/dataFriend/master/comsci_eiei.jpg" ></ion-img>
+  
+        </ion-card-content>
+      </ion-card>
+            
+
+            <ion-list>
+
+              <ion-item>
+                <ion-icon name="contact"></ion-icon>
+              Comsci Room A
+                <button ion-button clear icon-only item-end (click)="showFriendlist('Comsci Room A')">
+                  <ion-icon name="share-alt"></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="contact"></ion-icon>
+                Comsci Room B
+                <button ion-button clear icon-only item-end (click)="showFriendlist('Comsci Room B')">
+                  <ion-icon name="share-alt"></ion-icon>
+                </button>
+              </ion-item>
+
+             </ion-list>
+
+      
 </ion-content>
