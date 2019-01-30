@@ -1,8 +1,8 @@
 export interface Friend {
-    studentID: string;
+    studentID :number;
     firstName: string;
     lastName: string;
-    nickName: string;
+    nickName: String;
     faculty: string;
     major: string;
     birthday: Date;

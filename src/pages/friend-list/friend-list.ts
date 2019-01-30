@@ -29,7 +29,7 @@ export class FriendListPage {
   }
 
 
-  showDetail(studentID:String){
+  showDetail(studentID:number){
     this.navCtrl.push(FriendDeteilPage,
       {studentID:studentID}
     );

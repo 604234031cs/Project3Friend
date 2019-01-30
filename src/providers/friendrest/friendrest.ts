@@ -3,16 +3,11 @@ import { Injectable } from '@angular/core';
 import { Friend } from '../../Models/Friendmodels';
 import { Observable } from 'rxjs/Observable';
 
-/*
-  Generated class for the FriendrestProvider provider.
 
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class FriendrestProvider {
 
-  private url:string="https://raw.githubusercontent.com/604234031cs/dataFriend/master/data_3.json";
+  private url:string="https://raw.githubusercontent.com/604234031cs/dataFriend/master/newjson.json";
 
   constructor(public http: HttpClient) {
     console.log('Hello FriendrestProvider Provider');
@@ -20,6 +15,7 @@ export class FriendrestProvider {
 
   getFriendsList():Observable<any>{
     return this.http.get<Friend>(this.url);
-
   }
+
+  
 }

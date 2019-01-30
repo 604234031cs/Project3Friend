@@ -11,13 +11,14 @@ import { Friend } from '../../Models/Friendmodels';
 })
 export class FriendDeteilPage {
 
-  studentID:string;
+  studentID:number;
   friend:Friend;
 
   constructor(public Friendrest : FriendrestProvider ,public navCtrl: NavController, public navParams: NavParams) {
   }
+
   ionViewWillEnter(){
-    this.studentID=this.navParams.get("studentId");
+    this.studentID=this.navParams.get("studentID");
     this.Friendrest.getFriendsList().subscribe(data=>{
       this.friend=data.filter(friend => friend.studentID === this.studentID)[0];
      });
@@ -25,7 +26,7 @@ export class FriendDeteilPage {
   }
 
   ionViewDidLoad() {
-    this.studentID=this.navParams.get("studentId");
+    this.studentID=this.navParams.get("studentID");
     console.log(this.studentID);
   }
 
