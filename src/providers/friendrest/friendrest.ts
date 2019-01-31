@@ -15,6 +15,7 @@ export class FriendrestProvider {
 
   getFriendsList():Observable<any>{
     return this.http.get<Friend>(this.url);
+
   }
 
   

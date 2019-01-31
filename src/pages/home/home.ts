@@ -14,7 +14,7 @@ export class HomePage {
 
   showFriendlist(classRoom:String){
     this.navCtrl.push(FriendListPage,
-      {classroom:classRoom}
+      {classroom: classRoom}
 
     );
 

@@ -5,20 +5,20 @@
 </ion-header>
 <ion-content padding>
     <ion-grid style="height: 100%" >
-        <ion-row justify-content-center align-items-center style="height: 100%" *ngIf="Friend"> 
+        <ion-row justify-content-center align-items-center style="height: 100%" *ngIf="friend"> 
   
-              <img  height="200px" src="{{ Friend.picture }}"/>
+              <img  height="200px" src="{{ friend.picture }}"/>
       
               <ion-list >
-                <ion-item><strong>Firstname:</strong>{{ Friend.firstName }}</ion-item>
-                <ion-item><strong>Lastname:</strong>{{ Friend.lastName }}</ion-item>
-                <ion-item><strong>Nickname:</strong>{{ Friend.nickName }}</ion-item>
-                <ion-item><strong>Faculty:</strong>{{ Friend.faculty }}</ion-item>
-                <ion-item><strong>Major:</strong> {{ Friend.major }}</ion-item>
-                <ion-item><strong>Birthday:</strong>{{ Friend.birthday|date:'dd/MM/yyyy' }}</ion-item>
+                <ion-item><strong>Firstname:</strong>{{ friend.firstName }}</ion-item> 
+                <ion-item><strong>Lastname:</strong>{{ friend.lastName }}</ion-item>
+                <ion-item><strong>Nickname:</strong>{{ friend.nickName }}</ion-item>
+                <ion-item><strong>Faculty:</strong>{{ friend.faculty }}</ion-item>
+                <ion-item><strong>Major:</strong> {{ friend.major }}</ion-item>
+                <ion-item><strong>Birthday:</strong>{{ friend.birthday|date:'dd/MM/yyyy' }}</ion-item>
               </ion-list>
               <button ion-button full color="dark" (click)='gotoBack()' >
-                    Back
+                    Back 
             </button>  
 </ion-row>
 </ion-grid>

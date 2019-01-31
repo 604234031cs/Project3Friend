@@ -20,7 +20,7 @@ export class FriendDeteilPage {
   ionViewWillEnter(){
     this.studentID=this.navParams.get("studentID");
     this.Friendrest.getFriendsList().subscribe(data=>{
-      this.friend=data.filter(friend => friend.studentID === this.studentID)[0];
+      this.friend=data.filter(friend => friend.studentID == this.studentID)[0];
      });
 
   }
